@@ -6,11 +6,9 @@ for i in range(N):
 
 for _ in range(M):
     i,j = map(int, input().split())
+    arr[i-1:j] = arr[i-1:j][::-1] 
 
-    even = arr[i-1:j][::-1]
-    even2 = arr[j:N]
+print(*arr)
 
-    print(even+ even2)
-    
-
-    
+# arr[i:j] = i부터 j까지의 arr
+# [::-1] = 배열을 뒤집겠다 라는 의미
